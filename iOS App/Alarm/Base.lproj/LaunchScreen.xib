@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="655"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Candela-1" translatesAutoresizingMaskIntoConstraints="NO" id="I3w-PY-6ap">
+                    <rect key="frame" x="65" y="151" width="330" height="128"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="I3w-PY-6ap" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="151" id="NTx-xg-yGm"/>
+                <constraint firstItem="I3w-PY-6ap" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="65" id="Ol9-KV-iDg"/>
+                <constraint firstAttribute="trailing" secondItem="I3w-PY-6ap" secondAttribute="trailing" constant="65" id="o21-NT-VEa"/>
+                <constraint firstAttribute="bottom" secondItem="I3w-PY-6ap" secondAttribute="bottom" constant="376" id="x71-NZ-yhP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="538" y="542.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Candela-1" width="254" height="98"/>
+    </resources>
+</document>

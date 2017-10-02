@@ -1,0 +1,63 @@
+
+<!-- Replace your-device-ID-goes-here with your actual device ID
+and replace your-access-token-goes-here with your actual access token-->
+
+<!DOCTYPE>
+<html>
+  <head>
+  <script>
+
+  // CHANGE THIS when you change your particle
+  var deviceID = "43002a000347343337373738";
+  var accessToken = "7c85328e2dde3f883825c23866458ec549daf707";
+
+  function deviceMode()
+  {
+    var http = new XMLHttpRequest();
+
+    http.open('POST', 'https://api.particle.io/v1/devices/' + deviceID + '/led?access_token=' + accessToken, true);
+
+    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    http.send("arg="+document.getElementById("mode").value);
+
+    return false;
+  }
+
+  function brightness()
+  {
+    var http = new XMLHttpRequest();
+
+    http.open('POST', 'https://api.particle.io/v1/devices/' + deviceID + '/brightness?access_token=' + accessToken, true);
+
+    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    http.send("arg="+document.getElementById("brightness").value);
+
+    return false;
+  }
+
+  </script>
+  </head>
+  <body>
+  <center>
+  <br>
+  <br>
+  <br>
+  <form action="javascript:deviceMode()">
+    What do you want your device to do!<br><br>
+
+    Input &#09<input type="text" id="mode" name="input">
+    <input name="Submit"  type="submit" value="Update" />
+  </form>
+  <br><br>
+
+  <form action="javascript:brightness()">
+    How bright do you want your device to be!<br><br>
+
+    Brightness &#09<input type="number" id="brightness" step="0.01" value="100.00">
+    <input name="Submit"  type="submit" value="Update" />
+  </form>
+  </center>
+  </body>
+</html>
